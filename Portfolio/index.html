@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ibrahim — Portfolio</title>
+    <meta name="description" content="Ibrahim's portfolio" />
+    <!-- Tailwind CDN for quick prototyping -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-6">
+          <a href="#" class="text-2xl font-bold text-indigo-600">Ibrahim</a>
+          <nav class="hidden md:flex gap-6">
+            <a href="#about" class="hover:text-indigo-500">About</a>
+            <a href="#cv" class="hover:text-indigo-500">CV</a>
+            <a href="#projects" class="hover:text-indigo-500">Projects</a>
+            <a href="#contact" class="hover:text-indigo-500">Contact</a>
+          </nav>
+          <button id="menuBtn" class="md:hidden p-2 rounded bg-indigo-50 text-indigo-600">Menu</button>
+        </div>
+      </div>
+      <!-- mobile nav -->
+      <div id="mobileNav" class="md:hidden bg-white border-t hidden">
+        <div class="px-4 py-3 flex flex-col gap-2">
+          <a href="#about" class="block">About</a>
+          <a href="#cv" class="block">CV</a>
+          <a href="#projects" class="block">Projects</a>
+          <a href="#contact" class="block">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <section id="about" class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">About</h2>
+        <p class="text-lg text-gray-700">I am ibrahim. i am  an 18 year old  web developer in training and learning from orange digital center, while it is confusing to learn it is quite fun</p>
+      </section>
+
+      <section id="cv" class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">CV (Task Tracker)</h2>
+        <p class="text-sm text-gray-600 mb-4">Your task tracker site is embedded below as your living CV. Use the app to demonstrate projects and tasks.</p>
+        <div class="aspect-[16/9] bg-white rounded shadow overflow-hidden">
+          <iframe src="/index.html" title="Task Tracker" class="w-full h-full border-0"></iframe>
+        </div>
+      </section>
+
+      <section id="projects" class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded shadow">
+            <h3 class="font-semibold">Task Tracker</h3>
+            <p class="text-sm text-gray-600">A small task tracker built with HTML/CSS/JS. (Embedded in CV)</p>
+            <a class="text-indigo-600 text-sm" href="/index.html">View</a>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h3 class="font-semibold">Portfolio</h3>
+            <p class="text-sm text-gray-600">This responsive portfolio built with Tailwind CSS.</p>
+            <a class="text-indigo-600 text-sm" href="/Portfolio/index.html">View</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Contact</h2>
+        <p class="text-gray-700 mb-4">Feel free to reach out via email:</p>
+        <a href="mailto:abdulkadirpelumi@gmail.com" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded">abdulkadirpelumi@gmail.com</a>
+      </section>
+    </main>
+
+    <footer class="bg-white border-t">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-gray-500">
+        © 2025 Ibrahim. Built with Tailwind CSS.
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
